@@ -1,0 +1,52 @@
+<!-- LEIA AS INSTRUÇÕES DE USO ABAIXO PARA ENTENDER COMO UTILIZAR --> 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Curso da Plataforma DIO - Introdução ao Javascript</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="js/funcoes-botao.js"></script>
+<!--
+        <script type="text/javascript" src="js/arrays-dicionario.js"></script>
+        <script type="text/javascript" src="js/condicionais-lacos-date.js"></script>
+        <script type="text/javascript" src="js/funcoes.js"></script>
+        <script type="text/javascript" src="js/funcoes-botao.js"></script>              // Esse algoritmo faz o botão funcionar
+    - INSTRUÇÕES DE USO:
+    Para ver o funcionamento de cada script, troque o código acima por apenas um outro script e abra o
+    arquivo "index.html" para ver o resultado. A cada troca de script, é necessário salvar este arquivo e
+    abrir novamente o arquivo "index.html" OU pressionar a tecla F5 no teclado para atualizar o navegador
+    para mostrar o resultado
+-->  
+    </head>
+    <body onload="carregar()">      <!--Carrega uma função. Neste caso aparece um alerta de Bem Vindo-->
+        <h1>Curso da Plataforma DIO - Introdução ao Javascript</h1>
+        <h2>Para ver a funcionalidade desta página é necessário ler as instruções contidas no código fonte
+            desta página. Desta forma você poderá ver o que cada código de JavaScript traz de resultado. O 
+            botão abaixo, por exemplo, só irá funcionar quando o código HTML apontar para um determinado 
+            arquivo .js.
+
+        <br><br>    
+
+            Após modificar o código HTML, clique no botão abaixo. O resultado aparecerá abaixo do botão.</h2>
+        <button type="button" onclick="botao()">Clique Aqui!</button>
+        <h3 id="mensagem"></h3>     <!-- Você pode modificar o <h3></h3> por <p></p> e ao invés de cabeçalho, ele será um parágrafo -->
+        <p id="mensagem2" onclick="redirecionar()"></p>
+        <p id="mensagem3" onmouseover="alertar()"></p>
+        <p id="mensagem4" onmouseover="trocar()"></p>
+        <p id="mensagem5" onmouseover="trocar()" onmouseout="voltar()"></p>
+        <p id="mensagem6" onmouseover="trocar(this)" onmouseout="voltar(this)"></p>
+        <p id="mensagem7" onmouseover="trocar(this)" onmouseout="voltar(this)"></p>
+
+        É necessário modificar o código no arquivo "funçoes-botao.js" para que a lista abaixo possa ser utilizada
+
+        <br><br>
+
+        <select onchange="funcaoChange(this)">
+            <option value="Maça">Maça</option>
+            <option value="Banana">Banana</option>
+            <option value="Laranja">Laranja</option>
+            <option value="Limão">Limão</option>
+            <option value="Uva">Uva</option>
+        </select> 
+
+    </body>
+</html>
